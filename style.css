@@ -1,0 +1,211 @@
+* {
+    padding: 0; /* Define o valor de preenchimento (espaço interno) de todos os elementos como 0 */
+    margin: 0; /* Define a margem (espaço externo) de todos os elementos como 0 */
+    box-sizing: none; /* Define o modelo de caixa de todos os elementos como "none" (nenhum) */
+    font-family: 'Poppins', sans-serif; /* Define a família de fontes para todos os elementos como "Poppins" */
+}
+.spotify section {
+    display: flex; /* Define o tipo de exibição como flex */
+    height: 90vh; /* Define a altura do elemento como 90% da altura da janela (viewport height) */
+}
+.sidebar {
+    color: white; /* Define a cor do texto como branco */
+    font-weight: 100; /* Define o peso da fonte como 100 */
+    font-size: .8rem; /* Define o tamanho da fonte como 0.8 rem (unidade relativa ao tamanho da fonte base) */
+    min-width: 200px; /* Define a largura mínima do elemento como 200 pixels */
+    width: 20vw; /* Define a largura do elemento como 20% da largura da janela (viewport width) */
+    background-color: rgb(19, 19, 19); /* Define a cor de fundo como um tom de cinza escuro */
+}
+.content {
+    width: 100vw; /* Define a largura do elemento como 100% da largura da janela (viewport width) */
+    background-color: rgb(19, 19, 19); /* Define a cor de fundo como um tom de cinza escuro */
+    color: white; /* Define a cor do texto como branco */
+    padding-right: .5rem; /* Define um preenchimento (espaço interno) na margem direita do elemento */
+}
+footer {
+    width: 100vw; /* Define a largura do elemento como 100% da largura da janela (viewport width) */
+    height: 10vh; /* Define a altura do elemento como 10% da altura da janela (viewport height) */
+    background-color: rgb(19, 19, 19); /* Define a cor de fundo como um tom de cinza escuro */
+}
+
+.logo {
+    margin: .5rem 0 0 .5rem; /* Define as margens do elemento como 0.5 rem na parte superior e esquerda, e 0 na parte inferior e direita */
+    display: flex; /* Define o tipo de exibição como flex */
+    align-items: center; /* Alinha verticalmente os itens dentro do elemento ao centro */
+}
+.logo i {
+    font-size: 2rem; /* Define o tamanho da fonte dos elementos <i> dentro do elemento com a classe .logo como 2 rem */
+}
+.logo strong {
+    font-size: 1.3rem; /* Define o tamanho da fonte dos elementos <strong> dentro do elemento com a classe .logo como 1.3 rem */
+}
+.menu {
+    margin-top: 1rem; /* Define uma margem superior de 1 rem para o elemento com a classe .menu */
+}
+.menu .links li {
+    display: flex; /* Define o tipo de exibição como flex */
+    margin: .5rem 0 0 .8rem; /* Define as margens do elemento como 0.5 rem na parte superior, 0 na parte inferior e 0.8 rem na parte esquerda */
+    gap: 1rem; /* Define um espaço de 1 rem entre os elementos filhos do elemento <li> */
+    align-items: center; /* Alinha verticalmente os itens dentro do elemento ao centro */
+}
+.menu .links li span {
+    font-size: 1.3rem; /* Define o tamanho da fonte dos elementos <span> dentro dos elementos <li> que são descendentes diretos dos elementos com as classes .menu e .links como 1.3 rem */
+}
+.menu .playlist {
+    height: 55.2vh; /* Define a altura do elemento como 55.2% da altura da janela (viewport height) */
+    display: flex; /* Define o tipo de exibição como flex */
+    flex-direction: column; /* Define a direção flex como coluna */
+    justify-content: space-between; /* Alinha os itens verticalmente com espaçamento igual entre eles */
+}
+.menu .install {
+    display: flex; /* Define o tipo de exibição como flex */
+    margin-left: .8rem; /* Define uma margem esquerda de 0.8 rem para o elemento com a classe .install */
+}
+
+.menu .playlist ul li {
+    display: flex; /* Define o tipo de exibição como flex */
+    margin: .5rem 0 0 .8rem; /* Define as margens do elemento como 0.5 rem na parte superior, 0 na parte inferior e 0.8 rem na parte esquerda */
+    gap: 1rem; /* Define um espaço de 1 rem entre os elementos filhos do elemento <li> */
+}
+
+.content .content-top {
+    display: flex; /* Define o tipo de exibição como flex */
+    justify-content: space-between; /* Alinha os itens horizontalmente com espaçamento igual entre eles */
+}
+
+.content .content-top .buttons, .avatar {
+    display: flex; /* Define o tipo de exibição como flex */
+    gap: .5rem; /* Define um espaço de 0.5 rem entre os elementos filhos */
+    font-size: 1.5rem; /* Define o tamanho da fonte como 1.5 rem */
+    margin: .5rem 0 0 .5rem; /* Define as margens do elemento como 0.5 rem na parte superior, 0 na parte inferior e 0.5 rem na parte esquerda */
+}
+
+.content .content-top .avatar {
+    display: flex; /* Define o tipo de exibição como flex */
+    justify-content: center; /* Alinha os itens horizontalmente ao centro */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    gap: .5rem; /* Define um espaço de 0.5 rem entre os elementos filhos */
+    font-size: .7rem; /* Define o tamanho da fonte como 0.7 rem */
+    margin-right: .8rem; /* Define uma margem direita de 0.8 rem para o elemento com a classe .avatar */
+}
+
+.content .content-top .avatar img {
+    border-radius: 50%; /* Define um raio de borda de 50% para a imagem dentro do elemento com a classe .avatar */
+}
+
+.playlist-content {
+    margin-left: .6rem; /* Define uma margem esquerda de 0.6 rem para o elemento com a classe .playlist-content */
+    margin-top: .6rem; /* Define uma margem superior de 0.6 rem para o elemento com a classe .playlist-content */
+}
+
+.playlist-content .list-img {
+    display: grid; /* Define o tipo de exibição como grid */
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Define 4 colunas de largura igual no grid */
+    gap: .6rem; /* Define um espaço de 0.6 rem entre as células do grid */
+}
+
+.playlist-content .list-img .content-list {
+    background-color: rgb(65, 65, 65); /* Define a cor de fundo como rgb(65, 65, 65) para os elementos com a classe .content-list */
+    border-radius: .2rem; /* Define um raio de borda de 0.2 rem para os elementos com a classe .content-list */
+    display: flex; /* Define o tipo de exibição como flex */
+    overflow: hidden; /* Oculta o conteúdo que estiver além dos limites do elemento */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    gap: .5rem; /* Define um espaço de 0.5 rem entre os elementos filhos */
+}
+
+.playlist-content .list-img .content-list img {
+    width: 50px; /* Define a largura das imagens como 50 pixels para os elementos dentro de .content-list */
+}
+
+/* Excluisvo */
+.playlist-content-exclusivo .list-img-exclusivo .content-list-exclusivo img {
+    width: 50px; /* Define a largura das imagens como 50 pixels para os elementos dentro de .content-list-exclusivo */
+}
+
+.playlist-content-exclusivo .list-img-exclusivo .content-list-exclusivo {
+    display: flex; /* Define o tipo de exibição como flex */
+    flex-direction: column; /* Define a direção dos itens como coluna */
+}
+.playlist-content-exclusivo {
+    margin-left: .6rem; /* Define uma margem esquerda de 0.6 rem para o elemento com a classe .playlist-content-exclusivo */
+    margin-top: 3rem; /* Define uma margem superior de 3 rem para o elemento com a classe .playlist-content-exclusivo */
+}
+
+.playlist-content-exclusivo .list-img-exclusivo {
+    display: flex; /* Define o tipo de exibição como flex */
+    gap: 1rem; /* Define um espaço de 1 rem entre os elementos filhos */
+}
+
+
+.playlist-content-exclusivo .list-img-exclusivo .content-list-exclusivo {
+    background-color: rgb(65, 65, 65); /* Define a cor de fundo como rgb(65, 65, 65) para os elementos com a classe .content-list-exclusivo */
+    border-radius: .2rem; /* Define um raio de borda de 0.2 rem para os elementos com a classe .content-list-exclusivo */
+    display: flex; /* Define o tipo de exibição como flex */
+    overflow: hidden; /* Oculta o conteúdo que estiver além dos limites do elemento */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    gap: .5rem; /* Define um espaço de 0.5 rem entre os elementos filhos */
+}
+
+.playlist-content-exclusivo .list-img-exclusivo .content-list-exclusivo img {
+    width: 10vw; /* Define a largura das imagens como 10% da largura da viewport */
+    height: 30vh; /* Define a altura das imagens como 30% da altura da viewport */
+    object-fit: cover; /* Redimensiona a imagem para preencher o elemento mantendo a proporção e cortando qualquer parte excedente */
+}
+
+
+/* footer */
+.footer {
+    border-top: 0.1rem solid rgb(65, 65, 65); /* Define uma borda superior de 0.1 rem sólida com a cor rgb(65, 65, 65) para o elemento com a classe .footer */
+    background-color: rgb(19, 19, 19); /* Define a cor de fundo como rgb(19, 19, 19) para o elemento com a classe .footer */
+    color: white; /* Define a cor do texto como branco para o elemento com a classe .footer */
+    display: flex; /* Define o tipo de exibição como flex */
+    justify-content: space-between; /* Alinha os itens horizontalmente e distribui o espaço restante entre eles */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+
+.footer .music {
+    display: flex; /* Define o tipo de exibição como flex */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: center; /* Alinha os itens horizontalmente ao centro */
+    gap: .6rem; /* Define um espaço de 0.6 rem entre os elementos filhos */
+    margin-left: .5rem; /* Define uma margem esquerda de 0.5 rem para o elemento com a classe .music */
+}
+
+.footer .music .informacao {
+    display: flex; /* Define o tipo de exibição como flex */
+    flex-direction: column; /* Define a direção dos elementos filhos como coluna */
+}
+
+.footer .music .informacao span:nth-child(1) {
+    font-weight: bolder; /* Define o peso da fonte como mais forte (negrito) para o primeiro filho span dentro do elemento com a classe .informacao */
+    font-size: .8rem; /* Define o tamanho da fonte como 0.8 rem (unidade relativa ao tamanho da fonte base) para o primeiro filho span dentro do elemento com a classe .informacao */
+}
+
+.footer .music .informacao span {
+    font-weight: bolder; /* Define o peso da fonte como mais forte (negrito) para todos os filhos span dentro do elemento com a classe .informacao */
+    font-size: .6rem; /* Define o tamanho da fonte como 0.6 rem (unidade relativa ao tamanho da fonte base) para todos os filhos span dentro do elemento com a classe .informacao */
+}
+
+/* PLAY */
+.footer .play .comandos {
+    font-weight: bolder; /* Define o peso da fonte como mais forte (negrito) para os elementos com a classe .comandos que são descendentes diretos dos elementos com as classes .footer e .play */
+    display: flex; /* Define o tipo de exibição como flex */
+    justify-content: center; /* Alinha os itens horizontalmente ao centro */
+    font-size: x-large; /* Define o tamanho da fonte como x-large (tamanho de fonte extra grande) */
+}
+
+.footer .play .tempo {
+    display: flex; /* Define o tipo de exibição como flex */
+    justify-content: center; /* Alinha os itens horizontalmente ao centro */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+
+/* VOLUME */
+.footer .volume {
+    font-weight: bolder; /* Define o peso da fonte como mais forte (negrito) para os elementos com a classe .volume que são descendentes diretos do elemento com a classe .footer */
+    display: flex; /* Define o tipo de exibição como flex */
+    justify-content: center; /* Alinha os itens horizontalmente ao centro */
+    font-size: large; /* Define o tamanho da fonte como large (tamanho de fonte grande) */
+    gap: .6rem; /* Define o espaçamento entre os itens */
+    margin-right: .5rem; /* Define a margem direita como 0.5 rem (unidade relativa ao tamanho da fonte base) */
+}
